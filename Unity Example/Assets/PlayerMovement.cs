@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody rb;
 
-    public float forwardForce = 100f;
-    public float sidewayForce = 30f;
+    public float forwardForce = 1000f;
+    public float sidewayForce = 300f;
 
     private void FixedUpdate()
     {
@@ -16,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("d"))
         {
-            rb.AddForce(sidewayForce, 0, forwardForce * Time.deltaTime);
+            rb.AddForce(sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-sidewayForce, 0, forwardForce * Time.deltaTime);
+            rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         if (Input.GetKey("space"))
         {
