@@ -1723,7 +1723,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 1275370134}
-  gameManager: {fileID: 1994792625}
 --- !u!135 &1275370137
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1749,13 +1748,14 @@ GameObject:
   - component: {fileID: 1365301756}
   - component: {fileID: 1365301755}
   - component: {fileID: 1365301757}
+  - component: {fileID: 1365301758}
   m_Layer: 5
   m_Name: LevelComplete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1365301754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1836,6 +1836,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1365301758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365301753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d7c5d4771006543a33f34414c14d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1454041111
 PrefabInstance:
   m_ObjectHideFlags: 0
